@@ -60,5 +60,7 @@ public class Tesis extends Escrito {
 		return super.getPaginas() * palabrasPagina * 5;
 	}
 	
-
+	public String toString() {
+		return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.idea + "\n" + this.argumentos.length + "\n" + this.conclusion + "\n" + this.referencias;
+	}
 }
