@@ -30,5 +30,15 @@ public class Alfabeto extends Pictograma {
 		return this.letras.length;
 	}
 	
-
+	public String toString() {
+		String alfabeto = new String();
+		for(String letra : this.letras) {
+			if(letra != this.letras[this.letras.length - 1]) {
+				alfabeto += letra + ", ";
+			} else {
+				alfabeto += letra;
+			}
+		}
+		return alfabeto;
+	}
 }
